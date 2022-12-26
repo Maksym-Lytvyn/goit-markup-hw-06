@@ -564,6 +564,57 @@ img {
     letter-spacing: 0.02em;
     color: var(--accent);
 }
+.subscribe-btn {
+    position: relative;
+    background-color: var(--primary-brand);
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    top: 50px;
+    margin-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 168px;
+    height: 40px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.subscribe-btn:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.footer-send-svg {
+    width: 24px;
+    height: 20px;
+    margin-left: 16px;
+}
+.footer-email-input {
+    width:264px;
+    height:40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--text);
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+.footer-email-input:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
+}
+.footer-subscribe-form {
+    margin-left: 40px;
+}
 .footer-content {
     display: flex;
     align-items: center;
@@ -868,6 +919,12 @@ img {
     left: 360px;
     bottom: 528px;
     right: 24px;
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+.button-area:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .quit-btn {
     background-color: var(--accent);
@@ -887,9 +944,197 @@ img {
     background-color: var(--accent);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.modal-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 26px;
+    margin-left: 24px;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+}
+.modal-headline {
+    width: 360px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--text);
+    position: relative;
+    margin-top: 35px;
+    margin-left: 24px;
+    margin-right: 24px;
 
-
-
+}
+.name-input-modal {
+    width: 360px;
+    height: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-left: 34px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+    border-radius: 4px;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+.name-input-modal:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
+}
+.modal-svg-human {
+    left: 40px;
+    bottom: 35px;
+    width: 12px;
+    height: 12px;
+    position: relative;
+}
+.modal-svg-phone {
+    left: 40px;
+    bottom: 35px;
+    width: 12px;
+    height: 12px;
+    position: relative;
+}
+.modal-svg-email {
+    left: 40px;
+    bottom: 35px;
+    width: 12px;
+    height: 12px;
+    position: relative;
+}
+.phone-input-modal {
+    width: 360px;
+    height: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-left: 34px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    outline: none;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+.phone-input-modal:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
+}
+.email-input-modal {
+    width: 360px;
+    height: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-left: 34px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    outline: none;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+.email-input-modal:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
+}
+.comment-input-modal {
+    width: 360px;
+    height: 120px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-left: 16px;
+    padding-top: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    outline: none;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+.comment-input-modal:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
+}
+/* налаштований чекбокс */
+[type="checkbox"]{
+    opacity: 0;
+    margin-left: 10px;
+    margin-bottom: 24px;
+}
+[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 16px;
+    width: 16px;
+    outline: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    background-color: white;
+}
+[type="checkbox"]:checked + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 16px;
+    width: 16px;
+    outline: 2px solid #4D5AE5;
+}
+[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 16px;
+    width: 16px;
+    background-image: url(../images/tick-svg.svg);
+    background-color: #4D5AE5;
+    background-size: contain;
+}
+/* налаштований чекбокс */
+.modal-btn {
+    margin-left: 119px;
+    margin-right: 119px;
+    padding: 16px 32px;
+    width: 170px;
+    height: 51px;
+    background-color:var(--primary-brand);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    outline: none;
+}
+.modal-btn:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 /* Кінець секції оформлення бекдропу */
 
 
