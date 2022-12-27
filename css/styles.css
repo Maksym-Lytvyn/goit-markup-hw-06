@@ -923,10 +923,13 @@ img {
     cursor: pointer;
 }
 .quit-icon-svg {
+    top: 3px;
+    left: 1px;
     margin: 5px;
     height: 8px;
     width: 8px;
     fill: #000000;
+    position: relative;
 }
 .form-frame {
     padding: 24px;
@@ -1050,7 +1053,9 @@ img {
 .phone-input-modal:focus {
     outline: none;
     border: 1px solid #4D5AE5;
-    fill: var(--primary-brand);
+}
+.phone-input-modal:focus + .modal-svg-phone {
+    fill: #4D5AE5;
 }
 
 .email-input-modal {
@@ -1070,6 +1075,9 @@ img {
 .email-input-modal:focus {
     outline: none;
     border: 1px solid #4D5AE5;
+}
+.email-input-modal:focus + .modal-svg-email {
+    fill: #4D5AE5;
 }
 .comment-input-modal {
     width: 360px;
