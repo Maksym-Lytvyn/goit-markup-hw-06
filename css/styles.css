@@ -601,6 +601,7 @@ img {
     height:40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding-left: 16px;
     border-radius: 4px;
     background-color: var(--text);
     color: rgba(255, 255, 255, 0.6);
@@ -909,48 +910,67 @@ img {
     animation-duration: 2s;
     animation-timing-function: linear;
 }
-.button-area {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    background-color: var(--accent);
-    border-radius: 20px;
-    top: 24px;
-    left: 360px;
-    bottom: 528px;
-    right: 24px;
-    transition-property: box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
 .button-area:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .quit-btn {
     background-color: var(--accent);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 24px;
-    top: 24px;
+    position: relative;
     left: 360px;
-    bottom: 528px;
-    right: 24px;
+    top: 14px;
+    border-radius: 24px;
     cursor: pointer;
 }
 .quit-icon-svg {
     margin: 5px;
     height: 8px;
     width: 8px;
-    color: var(--accent);
-    background-color: var(--accent);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: #000000;
 }
-.modal-label {
+.form-frame {
+    padding: 24px;
+    margin-top: 0;
+}
+.modal-label1 {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     margin-top: 26px;
-    margin-left: 24px;
+    margin-left: 0;
+    margin-right: -15px;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+}
+.modal-label2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 26px;
+    margin-left: 0;
+    margin-right: -15px;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+}
+.modal-label3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 26px;
+    margin-left: 0;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+}
+.modal-label4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 26px;
+    margin-left: -15px;
     letter-spacing: 0.01em;
     color: #8E8F99;
 }
@@ -963,15 +983,13 @@ img {
     text-align: center;
     color: var(--text);
     position: relative;
-    margin-top: 35px;
-    margin-left: 24px;
     margin-right: 24px;
+    margin-bottom: 14px;
 
 }
 .name-input-modal {
     width: 360px;
     height: 40px;
-    margin-left: 24px;
     margin-right: 24px;
     padding-left: 34px;
     margin-bottom: 8px;
@@ -987,33 +1005,42 @@ img {
     border: 1px solid #4D5AE5;
 }
 .modal-svg-human {
-    left: 40px;
+    left: 20px;
     bottom: 35px;
     width: 12px;
     height: 12px;
     position: relative;
 }
 .modal-svg-phone {
-    left: 40px;
+    left: 20px;
     bottom: 35px;
     width: 12px;
     height: 12px;
     position: relative;
 }
+.modal-svg-phone:hover {
+    fill: #4D5AE5;
+}
+.modal-svg-phone:focus {
+    fill: #4D5AE5;
+}
 .modal-svg-email {
-    left: 40px;
+    left: 20px;
     bottom: 35px;
     width: 12px;
     height: 12px;
     position: relative;
+}
+.modal-svg-email:hover {
+    fill: #4D5AE5;
 }
 .phone-input-modal {
     width: 360px;
     height: 40px;
-    margin-left: 24px;
     margin-right: 24px;
     padding-left: 34px;
     margin-bottom: 8px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
     transition-property: border;
@@ -1023,16 +1050,19 @@ img {
 .phone-input-modal:focus {
     outline: none;
     border: 1px solid #4D5AE5;
+    fill: var(--primary-brand);
 }
+
 .email-input-modal {
     width: 360px;
     height: 40px;
-    margin-left: 24px;
     margin-right: 24px;
     padding-left: 34px;
     margin-bottom: 8px;
     border-radius: 4px;
     outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
     transition-property: border;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -1044,13 +1074,14 @@ img {
 .comment-input-modal {
     width: 360px;
     height: 120px;
-    margin-left: 24px;
     margin-right: 24px;
     padding-left: 16px;
     padding-top: 8px;
-    margin-bottom: 16px;
     border-radius: 4px;
+    resize: none;
     outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
     transition-property: border;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -1063,7 +1094,6 @@ img {
 [type="checkbox"]{
     opacity: 0;
     margin-left: 10px;
-    margin-bottom: 24px;
 }
 [type="checkbox"] + label {
     position: relative;
@@ -1106,13 +1136,14 @@ img {
     height: 16px;
     width: 16px;
     background-image: url(../images/tick-svg.svg);
+    background-repeat: no-repeat;
     background-color: #4D5AE5;
     background-size: contain;
 }
 /* налаштований чекбокс */
 .modal-btn {
-    margin-left: 119px;
-    margin-right: 119px;
+    margin-top: 24px;
+    margin-left: 95px;
     padding: 16px 32px;
     width: 170px;
     height: 51px;
@@ -1126,14 +1157,12 @@ img {
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    border: none;
     outline: none;
 }
-.modal-btn:hover {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.privacy-policy {
+    color: var(--primary-brand);
 }
 /* Кінець секції оформлення бекдропу */
 
