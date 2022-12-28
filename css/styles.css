@@ -233,6 +233,7 @@ img {
     color: #FFFFFF;
     margin-top: 48px;
     background-color: var(--primary-brand);
+    border: none;
     border-radius: 4px;
     cursor: pointer;
     transition-property: background-color, box-shadow;
@@ -872,6 +873,9 @@ img {
     position: fixed;
     width: 100%;
     height: 100%;
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
      
 }
 
@@ -894,6 +898,7 @@ img {
 
 .is-hidden {
     visibility: hidden;
+    opacity: 0;
     
 }
 .modal {
@@ -910,9 +915,7 @@ img {
     animation-duration: 2s;
     animation-timing-function: linear;
 }
-.button-area:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 .quit-btn {
     background-color: var(--accent);
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -922,6 +925,9 @@ img {
     border-radius: 24px;
     cursor: pointer;
 }
+.quit-btn:hover {
+    background-color: var(--primary-brand);
+}
 .quit-icon-svg {
     top: 3px;
     left: 1px;
@@ -930,6 +936,9 @@ img {
     width: 8px;
     fill: #000000;
     position: relative;
+}
+.quit-icon-svg:hover {
+    fill: white;
 }
 .form-frame {
     padding: 24px;
@@ -1006,6 +1015,9 @@ img {
 .name-input-modal:focus {
     outline: none;
     border: 1px solid #4D5AE5;
+}
+.name-input-modal:focus + .modal-svg-human {
+    fill: #4D5AE5;
 }
 .modal-svg-human {
     left: 20px;
@@ -1171,6 +1183,7 @@ img {
 }
 .privacy-policy {
     color: var(--primary-brand);
+    text-decoration: underline;
 }
 /* Кінець секції оформлення бекдропу */
 
